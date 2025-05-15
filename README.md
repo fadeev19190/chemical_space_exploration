@@ -1,26 +1,34 @@
-🧪 Molecular Property Analysis with RDKit
+🧪 Molecular Property Analysis & Classification with RDKit
 
-This project uses RDKit to compute molecular descriptors, neutralize molecular charges, and visualize molecular structures. It is designed for cheminformatics tasks such as drug-likeness evaluation, Lipinski filtering, and compound preprocessing.
+This project combines cheminformatics preprocessing, molecular visualization, and machine learning to analyze drug-like compounds. Built using RDKit and scikit-learn, the notebook provides an end-to-end pipeline from molecular cleaning to predictive modeling and chemical space visualization.
 
-📘 Overview
-	•	📦 Library: RDKit
-	•	🧠 Core Features:
-	•	Molecular descriptor computation (LogP, MW, HBA, HBD, TPSA, etc.)
-	•	Lipinski Rule of Five checks
-	•	Charge neutralization using substructure pattern matching
-	•	Molecular visualization with 2D structure rendering
+📘 Project Overview
+	•	🧬 Molecular descriptor calculation
+	•	🧼 Molecule preprocessing: salt removal, charge neutralization
+	•	📊 Visualization of chemical space and scaffolds
+	•	🤖 Supervised learning models for classification
+	•	🎯 Goal: Explore structure-property relationships in small molecules
 
-🔬 Features
-	•	Lipinski Descriptors:
-	•	HBA, HBD, Molecular Weight, LogP, TPSA, and Rotatable Bonds.
-	•	Charge Neutralization:
-	•	Based on substructure rules adapted from Hans de Winter.
-	•	Salt Removal (likely implemented later in the notebook).
-	•	Molecular Fingerprinting & Similarity (based on imports).
-	•	2D SVG Visualization of chemical structures.
+⸻
 
-🧰 Technologies Used
-	•	RDKit – cheminformatics toolkit
-	•	pandas, numpy, seaborn – data handling and plotting
-	•	IPython.display.SVG – for molecule rendering
-	•	matplotlib – optional for charts
+🚀 Features
+
+🧪 Cheminformatics
+	•	Lipinski descriptors: HBA, HBD, MW, LogP, TPSA, Rotatable Bonds
+	•	Charge Neutralization using SMARTS rules
+	•	Salt Removal and standardization of molecular SMILES
+
+🧠 Machine Learning
+	•	Supervised learning (e.g., Logistic Regression, Random Forest)
+	•	Binary classification to predict molecule activity or properties
+	•	Performance metrics: accuracy, confusion matrix, feature importance
+
+🌐 Chemical Space Visualization
+	•	t-SNE / PCA to reduce high-dimensional descriptor space
+	•	Scaffold Analysis: Identify common core structures in compounds
+	•	2D Molecular Rendering with RDKit’s Draw.MolsToGridImage
+
+🔬 Use Cases
+	•	Early-phase drug discovery projects
+	•	Virtual screening pipelines
+	•	Teaching cheminformatics or molecular ML
